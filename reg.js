@@ -10,7 +10,7 @@ document.querySelector('#j-submit').onclick = function (event) {
     fio = document.querySelector('#fio').value;
     email = document.querySelector('#email').value;
     let xhttp = new XMLHttpRequest();
-    let url = new URL('http://localhost:8080/registration');
+    let url = new URL('http://localhost:8085/registration');
     url.searchParams.set(username, password, fio, email);
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
